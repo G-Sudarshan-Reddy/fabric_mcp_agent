@@ -30,3 +30,19 @@ git push -u origin main
 
 git remote set-url origin https://github.com/G-Sudarshan-Reddy/fabric_mcp_agent.git
 git push -u origin main
+
+
+# Exact sequence used to fix "! [rejected] main -> main (fetch first)"
+# (used successfully in this repo)
+git status
+git remote -v
+git branch -vv
+git fetch origin
+git rev-list --left-right --count main...origin/main
+
+# If you have staged changes, commit them first
+git commit -m "Update Git push troubleshooting commands"
+
+# Rebase local main on latest remote main, then push
+git pull --rebase origin main
+git push -u origin main
