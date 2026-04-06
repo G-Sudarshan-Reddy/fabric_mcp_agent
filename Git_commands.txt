@@ -17,5 +17,16 @@ git remote add origin https://github.com/G-Sudarshan-Reddy/fabric_mcp_agent.git
 # 6) Push to GitHub
 git push -u origin main
 
+# If push is rejected (fetch first), sync with remote and retry:
+git checkout main
+git fetch origin
+git pull --rebase origin main
+
+# If histories are unrelated, use:
+git pull --rebase --allow-unrelated-histories origin main
+
+# Resolve conflicts if prompted, then:
+git push -u origin main
+
 git remote set-url origin https://github.com/G-Sudarshan-Reddy/fabric_mcp_agent.git
 git push -u origin main
