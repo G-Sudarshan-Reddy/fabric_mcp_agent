@@ -1,0 +1,21 @@
+# 1) Go to project
+cd "/c/Users/SudarshanGopal/OneDrive - Synapx Ltd/Backup/Projetcs/AI Foundry/Fabric - Agent/fabricops-agent"
+
+# 2) Initialize git repo
+git init
+
+# 3) Ensure branch is main
+git branch -M main
+
+# 4) Add files and commit
+git add .
+git commit -m "Initial commit"
+
+# 5) Add remote
+git remote add origin https://github.com/G-Sudarshan-Reddy/fabric_mcp_agent.git
+
+# 6) Push to GitHub
+git push -u origin main
+
+git remote set-url origin https://github.com/G-Sudarshan-Reddy/fabric_mcp_agent.git
+git push -u origin main

@@ -1,0 +1,34 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+.token_cache.json
+
+# Python cache / build artifacts
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+
+# Notebook / editor generated
+.ipynb_checkpoints/
+
+# Runtime logs and local audit output
+*.log
+audit_log/*.json
+
+# OS files
+.DS_Store
+Thumbs.db

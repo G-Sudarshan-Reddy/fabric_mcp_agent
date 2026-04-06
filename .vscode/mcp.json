@@ -1,0 +1,10 @@
+{
+  "servers": {
+    "fabricops": {
+      "type": "stdio",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": ["-m", "fabricops_mcp.server"],
+      "cwd": "${workspaceFolder}"
+    }
+  }
+}
